@@ -64,29 +64,44 @@ body {
 /* ===========================
    باکس سرمه‌ای: لوگو و شعار
 =========================== */
+
 .highlight-box {
-  background-color: #0b2b40;                  /* رنگ سرمه‌ای برند */
-  border-radius: 20px;                        /* گردی گوشه‌های باکس */
-  width: 75%;                                 /* پنج‌هفتم عرض صفحه */
-  margin: 120px auto 100px;                   /* فاصله از هدر + مرکز بودن */
-  padding: 30px 20px;                         /* فضای داخلی درون باکس */
-  color: white;                               /* رنگ نوشته‌ها سفید */
-  text-align: center;                         /* ترازبندی داخلی وسط‌چین */
-  aspect-ratio: 7 / 3.7;                      /* نسبت عرض به ارتفاع */
+  background-color: #0b2b40;          /* رنگ سرمه‌ای */
+  border-radius: 20px;                /* گردی گوشه‌ها */
+  width: 75%;                         /* پنج‌هفتم صفحه */
+  margin: 120px auto 100px;           /* فاصله از هدر و مرکز بودن */
+  padding: 30px 20px;                 /* فضای داخلی */
+  color: white;                       /* رنگ متن */
+  display: flex;                      /* برای قرارگیری آیتم‌ها در کنار هم */
+  justify-content: flex-start;       /* محتوای چسبیده به راست */
+  align-items: center;               /* وسط‌چین عمودی */
+  aspect-ratio: 7 / 3.7;              /* نسبت عرض به ارتفاع */
+  position: relative;
 }
 
-/* لوگوی داخل باکس سرمه‌ای */
+/* لوگوی داخل باکس سورمه‌ای */
 .highlight-box .logo {
-  max-width: 140px;                           /* حداکثر عرض لوگو */
-  display: block;                             /* برای margin خودکار */
-  margin: 0 auto 20px;                        /* مرکز کردن لوگو + فاصله پایین */
+  width: 5%;                          /* لوگو برابر با 5 درصد عرض باکس */
+  height: auto;                       /* نسبت حفظ شود */
+  margin-left: 10px;                  /* فاصله از متن */
+}
+
+/* بلوک سمت راست شامل لوگو و شعار */
+.highlight-box-content {
+  display: flex;
+  flex-direction: column;            /* لوگو بالا، متن پایین */
+  align-items: flex-start;           /* چسبیده به راست */
+  gap: 10px;                          /* فاصله بین لوگو و متن */
+  margin-right: 4%;                  /* فاصله از لبه راست باکس */
 }
 
 /* شعار زیر لوگو */
-.tagline {
-  font-size: 1.2rem;                          /* اندازه فونت مناسب */
-  line-height: 1.8;                           /* فاصله خطی برای خوانایی بهتر */
+.highlight-box .tagline {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 300px;                  /* حداکثر عرض نوشته */
 }
+
 
 /* ===========================
    متن معرفی پایین‌تر از باکس
