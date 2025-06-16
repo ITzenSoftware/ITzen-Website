@@ -72,3 +72,7 @@ body {
   padding: 20px;
   font-size: 0.9rem;
 }
+.logo {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
