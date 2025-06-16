@@ -11,7 +11,7 @@ body {
   background-color: #0b2b40;                  /* رنگ سرمه‌ای برند */
   border-radius: 20px;                        /* گرد بودن گوشه‌ها */
   width: 71%;                                 /* پنج‌هفتم عرض صفحه */
-  margin: 100px auto 40px;                     /* فاصله از بالا/پایین + مرکز شدن افقی */
+  margin: 100px auto 100px;                     /* فاصله از بالا/پایین + مرکز شدن افقی */
   padding: 30px 20px;                         /* فضای داخلی باکس */
   color: white;                               /* رنگ نوشته‌ها: سفید */
   text-align: center;                         /* ترازبندی داخلی: مرکز */
