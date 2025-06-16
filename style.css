@@ -75,7 +75,7 @@ body {
   display: flex;                      /* برای قرارگیری آیتم‌ها در کنار هم */
   justify-content: flex-start;       /* محتوای چسبیده به راست */
   align-items: center;               /* وسط‌چین عمودی */
-  aspect-ratio: 7 / 3.7;              /* نسبت عرض به ارتفاع */
+  aspect-ratio: 7 / 3;              /* نسبت عرض به ارتفاع */
   position: relative;
 }
 
