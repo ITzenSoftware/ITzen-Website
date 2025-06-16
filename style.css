@@ -133,25 +133,26 @@ body {
    ریسپانسیو کردن برای موبایل
 =========================== */
 @media (max-width: 768px) {
-  .highlight-box {
-    flex-direction: column;
+  .main-header {
+    min-height: 65px;                          /* حفظ ارتفاع فعلی */
+  }
+
+  .nav-container {
+    flex-direction: column;                    /* چینش عمودی لوگو و منو */
+    align-items: center;                       /* وسط‌چینی افقی */
+    justify-content: center;                   /* وسط‌چینی عمودی */
+    padding: 15px 20px;
+  }
+
+  .nav-logo {
+    position: static !important;               /* حذف absolute و بازگشت به جریان طبیعی */
+    margin-bottom: 15px;                       /* فاصله مناسب از منو */
+    max-height: 40px;                          /* ارتفاع مناسب برای موبایل */
+  }
+
+  .nav-links {
     justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .highlight-box-content {
-    align-items: center;
-    margin-right: 0;
-  }
-
-  .highlight-box .logo {
-    width: 20%;
-    margin-left: 0;
-  }
-
-  .highlight-box .tagline {
-    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
   }
 }
-
