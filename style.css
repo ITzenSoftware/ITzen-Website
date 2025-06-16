@@ -9,55 +9,57 @@ body {
 }
 
 /* ===========================
-   هدر ثابت (فریز شده) با منو و لوگو
+   هدر ثابت با منو وسط و لوگو تراز شده با باکس پایین
 =========================== */
 .main-header {
-  position: fixed;
+  position: fixed;                           /* فریز شدن هدر در بالای صفحه */
   top: 0;
   right: 0;
   left: 0;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
-  z-index: 1000;
+  background-color: white;                   /* رنگ پس‌زمینه هدر */
+  border-bottom: 1px solid #ddd;             /* خط خاکستری نازک پایین هدر */
+  z-index: 1000;                             /* نمایش بالاتر از تمام عناصر دیگر */
 }
 
-/* ظرف منو و لوگو */
+/* ظرف اصلی لوگو + منو */
 .nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;           /* فاصله بین لوگو و منو */
-  padding: 10px 14.5%;                      /* فاصله افقی مثل باکس highlight-box */
-  flex-wrap: wrap;                          /* در حالت موبایل اجازه شکستن بده */
+  display: flex;                             /* نمایش افقی دو بخش: لوگو + منو */
+  align-items: center;                       /* ترازبندی عمودی وسط */
+  justify-content: center;                   /* کل محتوا در وسط نگه داشته شود */
+  padding: 10px 0;                           /* بالا و پایین 10px، بدون padding چپ و راست */
+  position: relative;                        /* برای لوگوی سمت چپ موقعیت دهی مطلق ممکن می‌سازه */
 }
 
-/* منوها */
+/* لیست منو */
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 40px;                                /* فاصله بین آیتم‌ها */
+  list-style: none;                          /* حذف نقاط لیست */
+  display: flex;                             /* نمایش افقی آیتم‌ها */
+  gap: 40px;                                 /* فاصله افقی بین منوها */
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
 }
 
+/* لینک‌های منو */
 .nav-links li a {
-  text-decoration: none;
-  color: #0b2b40;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: 0.3s;
+  text-decoration: none;                     /* حذف خط زیر لینک */
+  color: #0b2b40;                            /* رنگ آبی برند */
+  font-weight: bold;                         /* فونت ضخیم‌تر برای خوانایی */
+  font-size: 1rem;                           /* اندازه استاندارد فونت */
+  transition: 0.3s;                          /* انیمیشن نرم برای هاور */
 }
 
+/* هاور روی آیتم منو */
 .nav-links li a:hover {
-  color: #666;
+  color: #666;                               /* خاکستری در حالت هاور */
 }
 
-/* لوگو سمت چپ هدر */
+/* لوگوی سمت چپ هدر */
 .nav-logo {
-  max-height: 36px;                         /* ارتفاع متعادل */
+  position: absolute;                        /* لوگو را خارج از جریان عادی قرار می‌دهیم */
+  left: 14.5%;                               /* فاصله دقیق از چپ، مطابق با باکس پایین */
+  max-height: 36px;                          /* ارتفاع استاندارد لوگو */
   height: auto;
 }
-
 
 /* ===========================
    باکس سرمه‌ای: لوگو و شعار
