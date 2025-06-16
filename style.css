@@ -119,22 +119,26 @@ body {
 =========================== */
 @media (max-width: 768px) {
   .main-header {
-    min-height: 100px;                      /* 👈 افزایش حداقل ارتفاع هدر برای موبایل */
+    min-height: 65px;                          /* حفظ ارتفاع فعلی */
   }
 
   .nav-container {
-    flex-direction: column;                 /* آیتم‌ها عمودی چیده بشن */
-    align-items: center;                    /* وسط‌چینی محتوا */
-    padding: 20px 20px;                     /* 👈 فضای کافی بالا و پایین در موبایل */
-  }
-
-  .nav-links {
-    justify-content: center;                /* منوها در مرکز */
-    gap: 20px;                              /* فاصله بین آیتم‌ها */
-    margin-top: 10px;                       /* فاصله از لوگو */
+    flex-direction: column;                    /* چینش عمودی لوگو و منو */
+    align-items: center;                       /* وسط‌چینی افقی */
+    justify-content: center;                   /* وسط‌چینی عمودی */
+    padding: 15px 20px;
   }
 
   .nav-logo {
-    margin-bottom: 10px;                    /* فاصله بین لوگو و منو */
+    position: static !important;               /* حذف absolute و بازگشت به جریان طبیعی */
+    margin-bottom: 15px;                       /* فاصله مناسب از منو */
+    max-height: 40px;                          /* ارتفاع مناسب برای موبایل */
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
   }
 }
+
