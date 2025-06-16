@@ -119,30 +119,32 @@ body {
 =========================== */
 @media (max-width: 768px) {
   .main-header {
-    min-height: auto;                      /* ارتفاع اتوماتیک بشه */
-    padding: 20px 0;
+    min-height: auto;                      /* اجازه بده ارتفاع طبق محتوا باشه */
+    padding: 10px 0;                        /* کاهش فاصله بالا و پایین */
   }
 
   .nav-container {
-    flex-direction: column;                /* لوگو و منو به صورت عمودی */
-    align-items: center;                   /* ترازبندی وسط */
-    padding: 10px 20px;
-    gap: 10px;                              /* فاصله بین لوگو و منو */
+    flex-direction: column;                /* لوگو و منو روی هم باشن */
+    align-items: center;                   /* وسط‌چین */
+    padding: 8px 20px;                     /* کاهش padding */
+    gap: 6px;                               /* فاصله کمتر بین لوگو و منو */
   }
 
   .nav-logo {
-    position: static !important;           /* برداشتن absolute در موبایل */
-    max-height: 36px;
-    margin-bottom: 10px;                   /* فاصله پایین لوگو از منو */
-    display: block;
+    position: static !important;           /* در جریان عادی صفحه قرار بگیره */
+    max-height: 32px;                      /* کاهش ارتفاع لوگو */
+    margin-bottom: 4px;                    /* فاصله کمی از منو */
   }
 
   .nav-links {
-    flex-direction: row;                   /* منو افقی باقی بمونه */
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 16px;                              /* فاصله بین آیتم‌های منو */
     margin: 0;
     padding: 0;
+  }
+
+  .highlight-box {
+    margin-top: 80px;                      /* فاصله از هدر بیشتر بشه */
   }
 }
