@@ -67,7 +67,7 @@ body {
 .highlight-box {
   background-color: #0b2b40;                  /* رنگ سرمه‌ای برند */
   border-radius: 20px;                        /* گردی گوشه‌های باکس */
-  width: 71%;                                 /* پنج‌هفتم عرض صفحه */
+  width: 75%;                                 /* پنج‌هفتم عرض صفحه */
   margin: 120px auto 100px;                   /* فاصله از هدر + مرکز بودن */
   padding: 30px 20px;                         /* فضای داخلی درون باکس */
   color: white;                               /* رنگ نوشته‌ها سفید */
