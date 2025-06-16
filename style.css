@@ -86,21 +86,20 @@ body {
   margin-left: 10px;                  /* فاصله از متن */
 }
 
-/* بلوک سمت راست شامل لوگو و شعار */
-.highlight-box-content {
-  display: flex;
-  flex-direction: column;            /* لوگو بالا، متن پایین */
-  align-items: flex-start;           /* چسبیده به راست */
-  gap: 10px;                          /* فاصله بین لوگو و متن */
-  margin-right: 4%;                  /* فاصله از لبه راست باکس */
+.highlight-box .logo {
+  width: 8%;
+  height: auto;
+  margin-left: 10px;
+  min-width: 40px;
+  max-width: 80px;
 }
 
-/* شعار زیر لوگو */
 .highlight-box .tagline {
-  font-size: 1.1rem;
+  font-size: clamp(0.9rem, 1.8vw, 1.5rem);
   line-height: 1.6;
-  max-width: 300px;                  /* حداکثر عرض نوشته */
+  max-width: 300px;
 }
+
 
 
 /* ===========================
