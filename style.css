@@ -12,53 +12,52 @@ body {
    هدر ثابت (فریز شده) با منو و لوگو
 =========================== */
 .main-header {
-  position: fixed;                            /* تثبیت هدر در بالای صفحه */
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  background-color: white;                    /* رنگ پس‌زمینه سفید */
-  border-bottom: 1px solid #ddd;              /* خط جداکننده پایین هدر */
-  z-index: 1000;                              /* نمایش بالاتر از سایر عناصر */
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
 }
 
-/* ظرف کلی منو و لوگو در هدر */
+/* ظرف منو و لوگو */
 .nav-container {
-  display: flex;                              /* نمایش افقی: لوگو + منو */
-  align-items: center;                        /* عمودی وسط‌چین */
-  justify-content: center;                    /* مرکز کردن کل محتوای nav */
-  padding: 10px 20px;                         /* فاصله داخلی برای زیبایی */
-  position: relative;                         /* برای جای‌گذاری لوگو چسبیده به چپ */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;           /* فاصله بین لوگو و منو */
+  padding: 10px 14.5%;                      /* فاصله افقی مثل باکس highlight-box */
+  flex-wrap: wrap;                          /* در حالت موبایل اجازه شکستن بده */
 }
 
-/* لیست منوها */
+/* منوها */
 .nav-links {
-  list-style: none;                           /* حذف نقطه‌گذاری لیست */
-  display: flex;                              /* آیتم‌ها به‌صورت افقی */
-  gap: 40px;                                  /* فاصله افقی بین آیتم‌های منو */
+  list-style: none;
+  display: flex;
+  gap: 40px;                                /* فاصله بین آیتم‌ها */
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
-/* لینک‌های داخل منو */
 .nav-links li a {
-  text-decoration: none;                      /* حذف زیرخط لینک‌ها */
-  color: #0b2b40;                             /* رنگ برند ITzen */
-  font-weight: bold;                          /* ضخیم‌کردن فونت منوها */
-  font-size: 1rem;                            /* اندازه استاندارد فونت */
-  transition: 0.3s;                           /* نرمی در هاور */
+  text-decoration: none;
+  color: #0b2b40;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.3s;
 }
 
-/* هاور روی آیتم‌های منو */
 .nav-links li a:hover {
-  color: #666;                                /* رنگ خاکستری هنگام هاور */
+  color: #666;
 }
 
-/* لوگوی سمت چپ هدر */
+/* لوگو سمت چپ هدر */
 .nav-logo {
-  position: absolute;                         /* موقعیت چسبیده به گوشه */
-  left: 20px;                                 /* فاصله از سمت چپ */
-  max-height: 36px;                           /* ارتفاع مناسب برای منو */
+  max-height: 36px;                         /* ارتفاع متعادل */
+  height: auto;
 }
+
 
 /* ===========================
    باکس سرمه‌ای: لوگو و شعار
@@ -112,4 +111,24 @@ body {
   height: auto;                               /* حفظ نسبت تصویر */
   border-radius: 10px;                        /* گردی گوشه‌ها */
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);     /* سایه لطیف برای تصویر */
+}
+/* ===========================
+   ریسپانسیو کردن برای موبایل
+=========================== */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;                 /* منو و لوگو روی هم بیان */
+    align-items: center;                    /* وسط‌چین بشن */
+    padding: 10px 20px;                     /* فضای کمتر در موبایل */
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  .nav-logo {
+    margin-bottom: 10px;
+  }
 }
