@@ -54,3 +54,33 @@ body {
   border-radius: 10px;                        /* گوشه‌های گرد */
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);     /* سایه نرم برای جذابیت بیشتر */
 }
+.main-header {
+  position: fixed;                  /* فریز شدن بالای صفحه */
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;         /* رنگ زمینه هدر */
+  border-bottom: 1px solid #ddd;   /* خط جداکننده از بخش پایین */
+  z-index: 1000;                   /* همیشه بالاتر از بقیه عناصر */
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;       /* منوها از راست شروع می‌شن */
+  gap: 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #0b2b40;                  /* رنگ برند برای لینک‌ها */
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #666;
+}
