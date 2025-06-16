@@ -1,51 +1,56 @@
+/* تنظیمات پایه برای کل صفحه */
 body {
-  font-family: Vazir, Tahoma, sans-serif;
-  background-color: white;
-  direction: rtl;
-  text-align: right;
+  font-family: Vazir, Tahoma, sans-serif;     /* استفاده از فونت وزیر یا فونت‌های جایگزین */
+  background-color: white;                    /* پس‌زمینه سفید */
+  direction: rtl;                             /* جهت نوشتار راست‌به‌چپ */
+  text-align: right;                          /* ترازبندی پیش‌فرض به سمت راست */
 }
 
+/* باکس سرمه‌ای با لوگو و شعار */
 .highlight-box {
-  background-color: #0b2b40;
-  border-radius: 20px;
-  width: 71%;               /* پنج هفتم عرض صفحه */
-  margin: 60px auto 40px;   /* مرکز شدن + فاصله از بالا و پایین */
-  padding: 30px 20px;       /* فضای داخلی */
-  color: white;
-  text-align: center;
-  aspect-ratio: 7 / 2;      /* نسبت عرض به ارتفاع = 2:1 */
+  background-color: #0b2b40;                  /* رنگ سرمه‌ای برند */
+  border-radius: 20px;                        /* گرد بودن گوشه‌ها */
+  width: 71%;                                 /* پنج‌هفتم عرض صفحه */
+  margin: 100px auto 40px;                     /* فاصله از بالا/پایین + مرکز شدن افقی */
+  padding: 30px 20px;                         /* فضای داخلی باکس */
+  color: white;                               /* رنگ نوشته‌ها: سفید */
+  text-align: center;                         /* ترازبندی داخلی: مرکز */
+  aspect-ratio: 7 / 2;                        /* نسبت عرض به ارتفاع */
 }
 
-
+/* استایل لوگو داخل باکس سرمه‌ای */
 .highlight-box .logo {
-  max-width: 140px;
-  display: block;
-  margin: 0 auto 20px;
+  max-width: 140px;                           /* حداکثر عرض لوگو */
+  display: block;                             /* برای مرکز شدن نیاز به بلوک بودن */
+  margin: 0 auto 20px;                        /* مرکز کردن لوگو + فاصله پایین */
 }
 
+/* شعار زیر لوگو */
 .tagline {
-  font-size: 1.2rem;
-  line-height: 1.8;
+  font-size: 1.2rem;                          /* اندازه فونت شعار */
+  line-height: 1.8;                           /* فاصله بین خطوط */
 }
 
+/* متن معرفی پایین باکس سرمه‌ای */
 .below-text {
-  text-align: center;
-  padding: 0 20px;
-  max-width: 800px;
-  margin: 30px auto;
-  font-size: 1rem;
-  color: #333;
+  text-align: center;                         /* وسط‌چین بودن متن */
+  padding: 0 20px;                            /* فضای داخلی چپ و راست */
+  max-width: 800px;                           /* حداکثر عرض */
+  margin: 30px auto;                          /* فاصله عمودی و مرکز شدن افقی */
+  font-size: 1rem;                            /* اندازه فونت متن */
+  color: #333;                                /* رنگ خاکستری تیره برای خوانایی بهتر */
 }
 
+/* قاب نمایش تصویر */
 .screenshot {
-  text-align: center;
-  margin-top: 30px;
+  text-align: center;                         /* مرکز کردن تصویر */
+  margin-top: 30px;                           /* فاصله از متن بالا */
 }
 
+/* تصویر پایینی (مثلاً sample.png یا demo.gif) */
 .screenshot-img {
-  max-width: 45%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 45%;                             /* نصف عرض معمولی (تصویر کوچک‌تر) */
+  height: auto;                               /* حفظ نسبت ابعاد اصلی */
+  border-radius: 10px;                        /* گوشه‌های گرد */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);     /* سایه نرم برای جذابیت بیشتر */
 }
-
