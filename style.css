@@ -1,78 +1,46 @@
-/* style.css – طراحی ساده با رنگ سازمانی ITzen */
 body {
-  margin: 0;
   font-family: Vazir, Tahoma, sans-serif;
-  background-color: #f2f2f2;
-  color: #333;
-  direction: rtl;
+  background-color: white;
 }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
+.highlight-box {
+  background-color: #0b2b40;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 60px auto 40px;
   padding: 40px 20px;
-}
-
-.hero {
-  background-color: #0b2b40;
   color: white;
   text-align: center;
-  padding: 100px 20px;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+.highlight-box .logo {
+  max-width: 140px;
+  display: block;
+  margin: 0 auto 20px;
 }
 
-.hero p {
-  font-size: 1.3rem;
-  margin-bottom: 30px;
+.tagline {
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
-.btn {
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
-  padding: 10px 24px;
-  border-radius: 8px;
-  text-decoration: none;
+.below-text {
+  text-align: center;
+  padding: 0 20px;
+  max-width: 800px;
+  margin: 30px auto;
   font-size: 1rem;
-  transition: 0.3s;
+  color: #333;
 }
 
-.btn:hover {
-  background-color: white;
-  color: #0b2b40;
-}
-
-.features {
-  background-color: white;
-  padding: 60px 20px;
-  text-align: right;
-}
-
-.features h2 {
-  color: #0b2b40;
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-.features ul {
-  list-style: none;
-  padding: 0;
-  font-size: 1.1rem;
-  line-height: 2.2;
-}
-
-.footer {
-  background-color: #0b2b40;
-  color: white;
+.screenshot {
   text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
+  margin-top: 30px;
 }
-.logo {
-  max-width: 200px;
-  margin-bottom: 30px;
+
+.screenshot-img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
