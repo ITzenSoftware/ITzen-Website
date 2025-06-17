@@ -93,10 +93,10 @@ body {
 /* بلوک سمت راست شامل لوگو و شعار */
 .highlight-box-content {
   display: flex;
-  flex-direction: column;            /* لوگو بالا، متن پایین */
-  align-items: flex-start;           /* چسبیده به راست */
-  gap: 10px;                          /* فاصله بین لوگو و متن */
-  margin-right: 4%;                  /* فاصله از لبه راست باکس */
+  flex-direction: column;                     /* لوگو بالا، متن پایین */
+  align-items: flex-start;                    /* چسبیده به راست */
+  gap: 10px;                                   /* فاصله بین لوگو و متن */
+  margin-right: 4%;                           /* فاصله از لبه راست */
 }
 
 /* شعار زیر لوگو */
