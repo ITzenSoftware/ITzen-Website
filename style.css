@@ -66,17 +66,20 @@ body {
 =========================== */
 
 .highlight-box {
-  background-color: #0b2b40;          /* رنگ سرمه‌ای */
-  border-radius: 20px;                /* گردی گوشه‌ها */
-  width: 73%;                         /* پنج‌هفتم صفحه */
-  margin: 120px auto 100px;           /* فاصله از هدر و مرکز بودن */
-  padding: 30px 20px;                 /* فضای داخلی */
-  color: white;                       /* رنگ متن */
-  display: flex;                      /* برای قرارگیری آیتم‌ها در کنار هم */
-  justify-content: flex-start;       /* محتوای چسبیده به راست */
-  align-items: center;               /* وسط‌چین عمودی */
-  aspect-ratio: 7 / 3;              /* نسبت عرض به ارتفاع */
-  position: relative;
+  background-image: url("box.jpg");           /* 👈 تصویر پس‌زمینه */
+  background-size: cover;                     /* 👈 کشش تصویر برای پر کردن کل ناحیه */
+  background-position: center;                /* 👈 مرکز‌چین کردن تصویر */
+  background-repeat: no-repeat;               /* 👈 تکرار نشه */
+  border-radius: 20px;                        /* 👈 حفظ گوشه‌های گرد */
+  width: 73%;                                 /* 👈 همان عرض قبلی */
+  margin: 120px auto 100px;                   /* 👈 فاصله از هدر و پایین */
+  padding: 30px 20px;                         /* 👈 فاصله داخلی برای محتوا */
+  color: white;                               /* 👈 رنگ متن روی تصویر سفید باشه */
+  display: flex;                              /* 👈 آیتم‌ها کنار هم */
+  justify-content: flex-start;               /* 👈 محتوا چسبیده به راست */
+  align-items: center;                        /* 👈 وسط‌چینی عمودی */
+  aspect-ratio: 7 / 3;                        /* 👈 نسبت ابعاد مطابق قبلی */
+  position: relative;                         /* 👈 برای تنظیم موقعیت محتوا */
 }
 
 /* لوگوی داخل باکس سورمه‌ای */
